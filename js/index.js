@@ -24,13 +24,13 @@ function createTweet(input) {
     var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
 
     if (tweetText.length > 140) {
-    getQuote();
+        getQuote();
 	} 
 	else {
-    var tweet = tweetLink + encodeURIComponent(tweetText);
-    document.querySelector('.quote').innerText = quoteText;
-    document.querySelector('.author').innerText = "Author: " + quoteAuthor;
-    document.querySelector('.tweet').setAttribute('href', tweet);
+        var tweet = tweetLink + encodeURIComponent(tweetText);
+        document.querySelector('.quote').innerText = quoteText;
+        document.querySelector('.author').innerText = "Author: " + quoteAuthor;
+        document.querySelector('.tweet').setAttribute('href', tweet);
 	}
 }
 
